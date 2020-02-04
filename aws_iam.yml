@@ -28,6 +28,6 @@
       iam:
         iam_type: user
         name: "{{ item.name }}"
-        state: "{{ user_opts.state }}"
+        state: "{{ user_opts_state }}"
         groups: "{{ item.aws_groups }}"
       loop: "{{ users }}"
